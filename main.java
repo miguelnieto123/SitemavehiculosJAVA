@@ -1,18 +1,18 @@
 public class main {
     public static void main(String[] args) {
+        // Crear objetos
+        Vehiculo  Ferrari= new Vehiculo("Ferrari", "295 ");
+        Vehiculo Toyota = new Coche("Toyota", "Corolla");
+        Vehiculo Volvo = new Camion("Volvo", "FH16");
 
-        vehiculos Todoterreno= new vehiculos("Mazda" , "CX5", 0);
+        
+        Vehiculo[] listaVehiculos = {Ferrari, Toyota, Volvo};
 
-        vehiculos Deportivo= new vehiculos("Ferrari" , "296 GTB", 0);
-        vehiculos Ciudad= new vehiculos("Renault" , "sandero 1.6", 0);
-
-        vehiculos[] listaVehiculos = {Todoterreno, Deportivo,Ciudad};
-
-        for (vehiculos v : listaVehiculos) {
-            v.MostrarInfo();
+       
+        for (Vehiculo v : listaVehiculos) {
+            v.mostrarInfo();
             v.acelerar();
 
-}
-    
+        }
     }
 }
